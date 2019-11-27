@@ -1,0 +1,11 @@
+article:
+    title:
+        label: Title
+    author:
+        label: Author
+    article_body:
+        label: Article Body
+    homepage:
+        label: Homepage
+    save_btn:
+        label: Save

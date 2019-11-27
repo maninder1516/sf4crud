@@ -38,7 +38,7 @@ class ArticleController extends AbstractController {
             $em->flush();
 
             // Redirect to the VIEW page
-            return $this->redirect('/view-article/' . $article->getId());
+            return $this->redirect('article/view-article/' . $article->getId());
         }
 
         return $this->render('article/edit.html.twig', ['form' => $form->createView()]);        
@@ -62,7 +62,7 @@ class ArticleController extends AbstractController {
         }
 
         return $this->render(
-                        'view.html.twig',
+                        'article/view.html.twig',
                         array('article' => $article)
         );
     }
@@ -77,7 +77,7 @@ class ArticleController extends AbstractController {
                 ->findAll();
 
         return $this->render(
-                        'show.html.twig',
+                        'article/show.html.twig',
                         array('articles' => $articles)
         );
     }
@@ -101,7 +101,7 @@ class ArticleController extends AbstractController {
         $em->remove($article);
         $em->flush();
 
-        return $this->redirect('/show-articles');
+        return $this->redirect('article/show-articles');
     }
 
     /**
@@ -128,11 +128,11 @@ class ArticleController extends AbstractController {
         if ($form->isSubmitted()) {
             $article = $form->getData();
             $em->flush();
-            return $this->redirect('/view-article/' . $id);
+            return $this->redirect('article/view-article/' . $id);
         }
 
         return $this->render(
-                        'edit.html.twig',
+                        'article/edit.html.twig',
                         array('form' => $form->createView())
         );
     }

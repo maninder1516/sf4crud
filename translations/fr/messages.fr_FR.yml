@@ -1,0 +1,11 @@
+article:
+    title:
+        label: Titre
+    author:
+        label: Auteure
+    article:
+        body_label: Corps de l'article
+    homepage:
+        label: Page d'accueil
+    save_btn:
+        label: Save

@@ -3,14 +3,14 @@ Symfony CRUD Demo Application
 ========================
 
 The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
+to develop applications.
 
 Requirements
 ------------
 
   * PHP 7.1.3 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+  * PDO-MySql PHP extension enabled;
+  * Symfony application requirements.
 
 Installation
 ------------
